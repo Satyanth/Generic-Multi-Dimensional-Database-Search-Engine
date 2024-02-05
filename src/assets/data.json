@@ -1,0 +1,184 @@
+{
+    "data": {
+      "properties": [
+        {
+          "propertyName": "publicOrPrivate",
+          "propertyQuestion": "Do you like to attend a public or private university?",
+          "propertyDisplayType": "radio",
+          "propertyDetails": [
+            {
+              "allowedValue": "Private",
+              "allowedValueCode": 2
+            },
+            {
+              "allowedValue": "Public",
+              "allowedValueCode": 1
+            }
+          ]
+        },
+        {
+          "propertyName": "region",
+          "propertyQuestion": "What region of the country do you \nprefer?",
+          "propertyDisplayType": "checkbox",
+          "propertyDetails": [
+            {
+              "allowedValue": "East",
+              "allowedValueCode": 3
+            },
+            {
+              "allowedValue": "Midwest",
+              "allowedValueCode": 2
+            },
+            {
+              "allowedValue": "Southeast",
+              "allowedValueCode": 1
+            },
+            {
+              "allowedValue": "West",
+              "allowedValueCode": 4
+            }
+          ]
+        },
+        {
+          "propertyName": "state",
+          "propertyQuestion": "What state of the country do you \nprefer?",
+          "propertyDisplayType": "multiselect",
+          "propertyDetails": [
+            {
+              "allowedValue": "Alabama",
+              "allowedValueCode": 1
+            },
+            {
+              "allowedValue": "Arizona",
+              "allowedValueCode": 2
+            },
+            {
+              "allowedValue": "California",
+              "allowedValueCode": 3
+            },
+            {
+              "allowedValue": "Florida",
+              "allowedValueCode": 4
+            },
+            {
+              "allowedValue": "Georgia",
+              "allowedValueCode": 5
+            },
+            {
+              "allowedValue": "Illinois",
+              "allowedValueCode": 6
+            },
+            {
+              "allowedValue": "Indiana",
+              "allowedValueCode": 7
+            },
+            {
+              "allowedValue": "Iowa",
+              "allowedValueCode": 8
+            },
+            {
+              "allowedValue": "Kansas",
+              "allowedValueCode": 9
+            },
+            {
+              "allowedValue": "Kentucky",
+              "allowedValueCode": 10
+            },
+            {
+              "allowedValue": "Louisiana",
+              "allowedValueCode": 11
+            },
+            {
+              "allowedValue": "Maryland",
+              "allowedValueCode": 12
+            },
+            {
+              "allowedValue": "Michigan",
+              "allowedValueCode": 13
+            },
+            {
+              "allowedValue": "Minnesota",
+              "allowedValueCode": 14
+            },
+            {
+              "allowedValue": "Missouri",
+              "allowedValueCode": 15
+            },
+            {
+              "allowedValue": "Nevada",
+              "allowedValueCode": 16
+            },
+            {
+              "allowedValue": "New Jersey",
+              "allowedValueCode": 18
+            },
+            {
+              "allowedValue": "New Mexico",
+              "allowedValueCode": 19
+            },
+            {
+              "allowedValue": "New York",
+              "allowedValueCode": 20
+            },
+            {
+              "allowedValue": "North \nCarolina",
+              "allowedValueCode": 17
+            },
+            {
+              "allowedValue": "Ohio",
+              "allowedValueCode": 21
+            },
+            {
+              "allowedValue": "Pennsylvania",
+              "allowedValueCode": 22
+            },
+            {
+              "allowedValue": "South \nCarolina",
+              "allowedValueCode": 23
+            },
+            {
+              "allowedValue": "South Dakota",
+              "allowedValueCode": 24
+            },
+            {
+              "allowedValue": "Tennessee",
+              "allowedValueCode": 25
+            },
+            {
+              "allowedValue": "Texas",
+              "allowedValueCode": 26
+            },
+            {
+              "allowedValue": "Utah",
+              "allowedValueCode": 27
+            },
+            {
+              "allowedValue": "Vermont",
+              "allowedValueCode": 28
+            },
+            {
+              "allowedValue": "Virginia",
+              "allowedValueCode": 29
+            },
+            {
+              "allowedValue": "Washington",
+              "allowedValueCode": 30
+            },
+            {
+              "allowedValue": "West Virginia",
+              "allowedValueCode": 31
+            },
+            {
+              "allowedValue": "Wisconsin",
+              "allowedValueCode": 32
+            },
+            {
+              "allowedValue": "Wyoming",
+              "allowedValueCode": 33
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
