@@ -1,0 +1,95 @@
+.box
+{
+    margin: auto;
+    width: 900px;
+    height: 700px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 5px 12px grey;
+    overflow: auto;
+}
+.id
+{
+    margin-left: 220px;
+    margin-top: 10px;
+    font-size: larger;
+    color:blue;
+    font-weight: bold;
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+}
+.button1 
+{
+    text-align: center;
+    margin: 10px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.title
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color:blue;
+    text-transform: uppercase;
+
+}
+.dropdown
+{
+    margin-top: 10px;
+    margin-right: 10px; 
+}
+hr.new1 {
+    border-top: 1px solid lightgray;
+  }
+
+.userbookmarks
+{
+    margin-top: 20px;
+    float: right;
+    margin-right: -90px;
+
+}
+
+.bookmarkstitle{
+    margin-top: -5px;
+    float: right;
+
+}
+
+.btn {
+
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+
+  .table-container {
+    box-shadow: 0px 0px 10px #ccc;
+    overflow: auto;
+    height: 200px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
