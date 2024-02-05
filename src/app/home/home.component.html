@@ -1,0 +1,131 @@
+
+
+<div class="box">
+
+  <div class="header">
+      
+      <h1 class="title">MultiDimensional Database Search</h1>
+      <label *ngIf="!welcomeMessage" class="id">userid</label>
+      <input [(ngModel)]="userID" (keyup.enter)="updateWelcomeMessage()" *ngIf="!welcomeMessage" name="userID">
+      <div class="id" *ngIf="welcomeMessage">{{welcomeMessage}}</div>
+      
+
+
+
+  </div>
+  <hr class="new1">
+
+  <div class="dropdown">
+    <select (change)="onOptionChange($event)" [(ngModel)]="selectedDomainType">
+      <option *ngFor="let option of options" [value]="option">{{option}}</option>
+    </select>
+
+  </div>
+
+    <div>
+      <h1 class="title">Search Criteria : </h1>
+      <hr class="new1">
+
+      <h4 class="bookmarkstitle" *ngIf="bookmarks && bookmarks.length > 0 && userID && welcomeMessage">Bookmarks</h4>
+      <div class="userbookmarks">
+        <div *ngIf="bookmarks && bookmarks.length > 0 && userID && welcomeMessage">
+          <ul>
+            <li *ngFor="let bookmark of bookmarks">
+              {{ bookmark.bname}}
+              <button type="button" (click)="deleteBookmark(bookmark.bname)">Delete</button>
+            </li>
+          </ul>
+        </div>        
+        </div>
+    </div>
+    
+    <div *ngIf="!collegeData && !automobileData">
+      
+    </div>
+  
+  <div *ngIf="collegeData">
+      <div *ngFor="let property of collegeData.properties">
+        <h3>{{property.propertyQuestion}}</h3>
+        <div *ngIf="property.propertyDisplayType === 'radio'">
+          <div *ngFor="let detail of property.propertyDetails">
+            <input type="radio" name="{{property.propertyName}}" [value]="detail.allowedValueCode" (change)="onRadioSelectionChange(property.propertyName,detail.allowedValueCode)"> {{detail.allowedValue}}
+          </div>
+        </div>
+        <div *ngIf="property.propertyDisplayType === 'checkbox'">
+          <div *ngFor="let detail of property.propertyDetails">
+            <input type="checkbox" name="{{property.propertyName}}" [value]="detail.allowedValueCode" (change)="onCheckboxSelectionChange(property.propertyName,detail.allowedValueCode, $event.target!)"> {{detail.allowedValue}}
+          </div>
+        </div>
+        
+        <div *ngIf="property.propertyDisplayType === 'multiselect'">
+          <select name="{{property.propertyName}}" (change)="onOptionsSelected(property.propertyName)" [(ngModel)]="codeValue" multiple>
+            <option *ngFor="let detail of property.propertyDetails" [value]="detail.allowedValueCode">{{detail.allowedValue}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <div *ngIf="automobileData">
+      <div *ngFor="let property of automobileData.properties">
+        <h3>{{property.propertyQuestion}}</h3>
+        <div *ngIf="property.propertyDisplayType === 'checkbox'">
+          <div *ngFor="let detail of property.propertyDetails">
+            <input type="checkbox" name="{{property.propertyName}}" [value]="detail.allowedValueCode"> {{detail.allowedValue}}
+          </div>
+        </div>
+        <div *ngIf="property.propertyDisplayType === 'multiselect'">
+          <select name="{{property.propertyName}}" multiple>
+            <option *ngFor="let detail of property.propertyDetails" [value]="detail.allowedValueCode">{{detail.allowedValue}}</option>
+          </select>
+        </div>
+        <div *ngIf="property.propertyDisplayType === 'radio'">
+          <div *ngFor="let detail of property.propertyDetails">
+            <input type="radio" name="{{property.propertyName}}" [value]="detail.allowedValueCode"> {{detail.allowedValue}}
+          </div>
+        </div>
+        <div *ngIf="property.propertyDisplayType === 'select'">
+          <div *ngFor="let detail of property.propertyDetails">
+            <input type="radio" name="{{property.propertyName}}" [value]="detail.allowedValueCode"> {{detail.allowedValue}}
+          </div>
+        </div>
+    
+        
+      </div>
+    
+    </div>
+
+    
+    
+    
+
+    <button class="button1" (click)="resetData()">Reset</button>
+    <button class="button1" (click)="nextPage()" [disabled]="disabledNext">Next</button>
+    <button class="button1" [disabled]="disabledPrevious" (click)="previousPage()">Previous</button>
+    <button class="button1" (click)="retriveResults()">Search</button>
+    <label for="bookmark">Bookmark Name:</label>
+    <input placeholder="Enter BookMark" id="bookmark" [(ngModel)]="bookmark" name="bookmark">
+    <button class="button1" [disabled]="bookmark=== '' || bookmarks.length>=5" (click)="createBookmark()">Add BookMark</button>
+  <h1 class="title">Results : </h1>
+  <hr class="new1">
+
+  <div class="table-container" [ngStyle]="{'height.px': results ? results.length * 40 : 0}">
+    <table *ngIf="results">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let result of results">
+          <td>{{ result.name }}</td>
+          <td>{{ result.url }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+
+</div>
