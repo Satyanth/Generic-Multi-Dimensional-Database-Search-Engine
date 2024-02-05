@@ -1,0 +1,342 @@
+{
+  "data": {
+    "properties": [
+      {
+        "propertyName": "usedOrNew",
+        "propertyQuestion": "Which cars are you interested \nin?",
+        "propertyDisplayType": "checkbox",
+        "propertyDetails": [
+          {
+            "allowedValue": "Certified \nCars",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "New \nCars",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Used \nCars",
+            "allowedValueCode": 2
+          }
+        ]
+      },
+      {
+        "propertyName": "bodyStyle",
+        "propertyQuestion": "Which body styles are you \nconsidering?",
+        "propertyDisplayType": "multiselect",
+        "propertyDetails": [
+          {
+            "allowedValue": "Convertible",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Coupe",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Hatchback",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "Sedan",
+            "allowedValueCode": 4
+          },
+          {
+            "allowedValue": "SUV",
+            "allowedValueCode": 5
+          },
+          {
+            "allowedValue": "Truck",
+            "allowedValueCode": 6
+          },
+          {
+            "allowedValue": "Van",
+            "allowedValueCode": 7
+          },
+          {
+            "allowedValue": "Wagon",
+            "allowedValueCode": 8
+          }
+        ]
+      },
+      {
+        "propertyName": "make",
+        "propertyQuestion": "Which manufacturer are you \nconsidering?",
+        "propertyDisplayType": "multiselect",
+        "propertyDetails": [
+          {
+            "allowedValue": "Acura",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Audi",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Bentley",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "BMW",
+            "allowedValueCode": 4
+          },
+          {
+            "allowedValue": "Ford",
+            "allowedValueCode": 5
+          },
+          {
+            "allowedValue": "Honda",
+            "allowedValueCode": 6
+          },
+          {
+            "allowedValue": "Hyundai",
+            "allowedValueCode": 7
+          },
+          {
+            "allowedValue": "Mazda",
+            "allowedValueCode": 8
+          },
+          {
+            "allowedValue": "Nissan",
+            "allowedValueCode": 9
+          },
+          {
+            "allowedValue": "Saab",
+            "allowedValueCode": 10
+          },
+          {
+            "allowedValue": "Toyota",
+            "allowedValueCode": 11
+          },
+          {
+            "allowedValue": "Volkswagen",
+            "allowedValueCode": 12
+          }
+        ]
+      },
+      {
+        "propertyName": "age",
+        "propertyQuestion": "What age cars are you considering?",
+        "propertyDisplayType": "radio",
+        "propertyDetails": [
+          {
+            "allowedValue": "Between 2 and 5 \nyears old",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Between 5 and 10 \nyears old",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "Less than 2 years \nold",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "More than 10 years \nold",
+            "allowedValueCode": 4
+          }
+        ]
+      },
+      {
+        "propertyName": "priceRange",
+        "propertyQuestion": "What price range are you looking \nfor?",
+        "propertyDisplayType": "radio",
+        "propertyDetails": [
+          {
+            "allowedValue": "Between \n$12,000 and $18,000",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Between \n$18,000 and $30,000",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "Less than \n$12,000",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "More than \n$30,000",
+            "allowedValueCode": 4
+          }
+        ]
+      },
+      {
+        "propertyName": "sellerType",
+        "propertyQuestion": "Which sellers do you prefer?",
+        "propertyDisplayType": "radio",
+        "propertyDetails": [
+          {
+            "allowedValue": "Dealers",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Private \nSeller",
+            "allowedValueCode": 2
+          }
+        ]
+      },
+      {
+        "propertyName": "mileage",
+        "propertyQuestion": "What mileage are you looking for?",
+        "propertyDisplayType": "radio",
+        "propertyDetails": [
+          {
+            "allowedValue": "Less than \n15,000",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Less than \n30,000",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Less than \n45,000",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "Less than \n60,000",
+            "allowedValueCode": 4
+          },
+          {
+            "allowedValue": "More than \n60,000",
+            "allowedValueCode": 5
+          }
+        ]
+      },
+      {
+        "propertyName": "color",
+        "propertyQuestion": "What exterior color do you prefer?",
+        "propertyDisplayType": "select",
+        "propertyDetails": [
+          {
+            "allowedValue": "Beige",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Black",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Blue",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "Brown",
+            "allowedValueCode": 4
+          },
+          {
+            "allowedValue": "Burgundy",
+            "allowedValueCode": 5
+          },
+          {
+            "allowedValue": "Charcoal",
+            "allowedValueCode": 6
+          },
+          {
+            "allowedValue": "Gold",
+            "allowedValueCode": 7
+          },
+          {
+            "allowedValue": "Gray",
+            "allowedValueCode": 8
+          },
+          {
+            "allowedValue": "Green",
+            "allowedValueCode": 9
+          },
+          {
+            "allowedValue": "Orange",
+            "allowedValueCode": 10
+          },
+          {
+            "allowedValue": "Pink",
+            "allowedValueCode": 11
+          },
+          {
+            "allowedValue": "Red",
+            "allowedValueCode": 12
+          },
+          {
+            "allowedValue": "Silver",
+            "allowedValueCode": 13
+          },
+          {
+            "allowedValue": "Tan",
+            "allowedValueCode": 14
+          },
+          {
+            "allowedValue": "Turquoise",
+            "allowedValueCode": 15
+          },
+          {
+            "allowedValue": "White",
+            "allowedValueCode": 16
+          }
+        ]
+      },
+      {
+        "propertyName": "sunroof",
+        "propertyQuestion": "Do you need a Sunroof?",
+        "propertyDisplayType": "radio",
+        "propertyDetails": [
+          {
+            "allowedValue": "No",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Yes",
+            "allowedValueCode": 1
+          }
+        ]
+      },
+      {
+        "propertyName": "luxurySeats",
+        "propertyQuestion": "Do you need Luxury Seats?",
+        "propertyDisplayType": "radio",
+        "propertyDetails": [
+          {
+            "allowedValue": "No",
+            "allowedValueCode": 2
+          },
+          {
+            "allowedValue": "Yes",
+            "allowedValueCode": 1
+          }
+        ]
+      },
+      {
+        "propertyName": "transmission",
+        "propertyQuestion": "What transmission do you \nprefer?",
+        "propertyDisplayType": "radio",
+        "propertyDetails": [
+          {
+            "allowedValue": "Automatic",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Manual",
+            "allowedValueCode": 2
+          }
+        ]
+      },
+      {
+        "propertyName": "fuelType",
+        "propertyQuestion": "What fuel type do you \nprefer?",
+        "propertyDisplayType": "checkbox",
+        "propertyDetails": [
+          {
+            "allowedValue": "Alternative",
+            "allowedValueCode": 1
+          },
+          {
+            "allowedValue": "Diesel",
+            "allowedValueCode": 3
+          },
+          {
+            "allowedValue": "Gasoline",
+            "allowedValueCode": 2
+          }
+        ]
+      }
+    ]
+  }
+}
